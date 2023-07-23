@@ -21,9 +21,7 @@
                 Привет, меня зовут Артур и я программист!
         </div>
     </section>
-
-    <section>
-    <div class="results">
+    <section class="results">
 
         <div class="words">
             Результаты ЕГЭ:
@@ -31,15 +29,28 @@
 
         <div class="lessons">
             <div class="lesson">Математика</div>
-            <div class="score">
+            <div class="score box-shadow" id="math">
                 100
                 <div class="circle_img"><img src="static/images/math.png" class="icon"></div>
             </div>
         </div>
+        <style>
+            #growing {
+              transition-property: height;
+              transition-duration: 3s;
+            }
+        </style>
+
+        <script>
+            growing.onclick = function() {
+              this.style.height = ;
+              this.style.color = 'red';
+            };
+        </script>
 
         <div class="lessons">
             <div class="lesson">Русский Язык</div>
-            <div class="score">
+            <div class="score box-shadow" id="lang">
                 100
                 <div class="circle_img"><img src="static/images/language.png" class="icon"></div>
             </div>
@@ -48,7 +59,7 @@
 
         <div class="lessons">
             <div class="lesson">Физика</div>
-            <div class="score">
+            <div class="score box-shadow" id="phis">
                 100
                 <div class="circle_img"><img src="static/images/phisic.png" class="icon"></div>
             </div>
@@ -57,62 +68,63 @@
 
         <div class="lessons">
             <div class="lesson">Информатика</div>
-            <div class="score">
+            <div class="score box-shadow" id="inf">
                 100
                 <div class="circle_img"><img src="static/images/informatika.jpeg" class="icon"></div>
             </div>
 
         </div>
 
-    </div>
     </section>
-    <div class="Yandex_lyceum">
+
+    <section class="Yandex_lyceum">
         <div>
             Я прошел курсы Лицея Академии Яндекса
         </div>
 
-        <button class='Yandex_button' onclick="redirect('пром');">
+        <button class='Yandex_button scalable return box-shadow pointer' onclick="redirect('пром');">
             <img src="./static/images/яндекс.jpeg" class="yaicon">
             Основы Промышленного программирования
         </button>
 
-        <button class='Yandex_button' onclick="redirect('основы');">
+        <button class='Yandex_button scalable return box-shadow pointer' onclick="redirect('основы');">
             <img src="./static/images/яндекс.jpeg" class="yaicon">
             Основы программирования на языке Python
         </button>
-    </div>
+    </section>
 
-    <div class="movements">
+    <section class="movements">
         <div>
             Я был волонтером движений
         </div>
-        <div class="movement">
+        <div class="movement box-shadow">
             <img src="static/images/ФОРПОСТ.jpg" class="movement_icon">
             <div class="movement_name">
                 ФОРПОСТ
             </div>
         </div>
-        <div class="movement">
+
+        <div class="movement box-shadow">
             <img src="static/images/Юнармия.png" class="movement_icon">
             <div class="movement_name">
                 Юнармия
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
         <div class="social">
             Связаться со мной
             <br>
-            <a href="mailto:arturpimenov979@gmail.com"><img class="footer_icons" src="../static/images/gmail_icon.png"></a>
-            <img class="footer_icons" src="../static/images/tg_icon.png" onclick="redirect('tg')">
-            <img class="footer_icons" src="../static/images/wa_icon.png" onclick="redirect('wa')">
+            <a href="mailto:arturpimenov979@gmail.com"><img class="footer_icons scalable return" src="../static/images/gmail_icon.png"></a>
+            <img class="footer_icons scalable return pointer" src="../static/images/tg_icon.png" onclick="redirect('tg')">
+            <img class="footer_icons scalable return pointer" src="../static/images/wa_icon.png" onclick="redirect('wa')">
         </div>
 
         <div class="repository">
             Гитхаб
             <br>
-            <img class="footer_icons" src="../static/images/git_icon.png" onclick="redirect('git')">
+            <img class="footer_icons scalable return pointer" src="../static/images/git_icon.png" onclick="redirect('git')">
         </div>
 
         <div id="rights">

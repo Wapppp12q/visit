@@ -15,3 +15,7 @@ function redirect(page) {
         window.open('https://github.com/Wapppp12q?tab=repositories')
     }
 }
+
+function transformation(res, height) {
+    res.style.height = Number(res) * height;
+}
