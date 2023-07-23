@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Визитка</title>
+    <style>
+        @import url('/static/css/main.css')
+    </style>
+</head>
+<body>
+    <script src="./static/js/main.js"></script>
+    <section>
+        <div class="cap">
+            <img>
+        </div>
+
+        <div class="HELLO">
+                Привет, меня зовут Артур и я программист!
+        </div>
+    </section>
+
+    <section>
+    <div class="results">
+
+        <div class="words">
+            Результаты ЕГЭ:
+        </div>
+
+        <div class="lessons">
+            <div class="lesson">Математика</div>
+            <div class="score">
+                100
+                <div class="circle_img"><img src="static/images/math.png" class="icon"></div>
+            </div>
+        </div>
+
+        <div class="lessons">
+            <div class="lesson">Русский Язык</div>
+            <div class="score">
+                100
+                <div class="circle_img"><img src="static/images/language.png" class="icon"></div>
+            </div>
+
+        </div>
+
+        <div class="lessons">
+            <div class="lesson">Физика</div>
+            <div class="score">
+                100
+                <div class="circle_img"><img src="static/images/phisic.png" class="icon"></div>
+            </div>
+
+        </div>
+
+        <div class="lessons">
+            <div class="lesson">Информатика</div>
+            <div class="score">
+                100
+                <div class="circle_img"><img src="static/images/informatika.jpeg" class="icon"></div>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    <div class="Yandex_lyceum">
+        <div>
+            Я прошел курсы Лицея Академии Яндекса
+        </div>
+
+        <button class='Yandex_button' onclick="redirect('пром');">
+            <img src="./static/images/яндекс.jpeg" class="yaicon">
+            Основы Промышленного программирования
+        </button>
+
+        <button class='Yandex_button' onclick="redirect('основы');">
+            <img src="./static/images/яндекс.jpeg" class="yaicon">
+            Основы программирования на языке Python
+        </button>
+    </div>
+
+    <div class="movements">
+        <div>
+            Я был волонтером движений
+        </div>
+        <div class="movement">
+            <img src="static/images/ФОРПОСТ.jpg" class="movement_icon">
+            <div class="movement_name">
+                ФОРПОСТ
+            </div>
+        </div>
+        <div class="movement">
+            <img src="static/images/Юнармия.png" class="movement_icon">
+            <div class="movement_name">
+                Юнармия
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            Связаться со мной
+            <br>
+            <a href="mailto:arturpimenov979@gmail.com"><img class="footer_icons" src="../static/images/gmail_icon.png"></a>
+            <img class="footer_icons" src="../static/images/tg_icon.png" onclick="redirect('tg')">
+            <img class="footer_icons" src="../static/images/wa_icon.png" onclick="redirect('wa')">
+        </div>
+
+        <div class="repository">
+            Гитхаб
+            <br>
+            <img class="footer_icons" src="../static/images/git_icon.png" onclick="redirect('git')">
+        </div>
+
+        <div id="rights">
+            Все права защищены &copy;
+            <script language="javascript" type="text/javascript"><!--
+                var d = new Date();
+                document.write(d.getFullYear());
+            </script>
+        </div>
+    </footer>
+</body>
+</html>
