@@ -16,6 +16,8 @@ function redirect(page) {
     }
 }
 
-function transformation(res, height) {
-    res.style.height = Number(res) * height;
+function resizeBlock(lesson, result) {
+    console.log(lesson, typeof(lesson), result, typeof(result));
+    const h = Number(result) * 1.6;
+    document.getElementById(lesson).style.height = `${String(h)}px`;
 }

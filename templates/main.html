@@ -10,17 +10,30 @@
         @import url('/static/css/main.css')
     </style>
 </head>
-<body>
+<body onload="resizeBlock('math', '74'); resizeBlock('lang', '72'); resizeBlock('phis', '76'); resizeBlock('inf', '83');">
     <script src="./static/js/main.js"></script>
-    <section>
-        <div class="cap">
-            <img>
+
+    <div class="cap z-20">
+            <img src="./static/images/logotip.png" class="header_icon">
         </div>
 
+    <section class="header">
         <div class="HELLO">
-                Привет, меня зовут Артур и я программист!
+                Привет, меня зовут Артур
+                <br>
+                И я программист!
         </div>
     </section>
+
+    <section class="about_me">
+        <div>
+
+        </div>
+        <div class="skills">
+
+        </div>
+    </section>
+
     <section class="results">
 
         <div class="words">
@@ -29,29 +42,16 @@
 
         <div class="lessons">
             <div class="lesson">Математика</div>
-            <div class="score box-shadow" id="math">
-                100
+            <div class="score box-shadow" id="math" >
+                74
                 <div class="circle_img"><img src="static/images/math.png" class="icon"></div>
             </div>
         </div>
-        <style>
-            #growing {
-              transition-property: height;
-              transition-duration: 3s;
-            }
-        </style>
-
-        <script>
-            growing.onclick = function() {
-              this.style.height = ;
-              this.style.color = 'red';
-            };
-        </script>
 
         <div class="lessons">
             <div class="lesson">Русский Язык</div>
             <div class="score box-shadow" id="lang">
-                100
+                72
                 <div class="circle_img"><img src="static/images/language.png" class="icon"></div>
             </div>
 
@@ -60,7 +60,7 @@
         <div class="lessons">
             <div class="lesson">Физика</div>
             <div class="score box-shadow" id="phis">
-                100
+                76
                 <div class="circle_img"><img src="static/images/phisic.png" class="icon"></div>
             </div>
 
@@ -69,7 +69,7 @@
         <div class="lessons">
             <div class="lesson">Информатика</div>
             <div class="score box-shadow" id="inf">
-                100
+                83
                 <div class="circle_img"><img src="static/images/informatika.jpeg" class="icon"></div>
             </div>
 
@@ -83,13 +83,16 @@
         </div>
 
         <button class='Yandex_button scalable return box-shadow pointer' onclick="redirect('пром');">
-            <img src="./static/images/яндекс.jpeg" class="yaicon">
-            Основы Промышленного программирования
+            <div class="type_of_training">
+                Основы Промышленного программирования
+            </div>
         </button>
 
         <button class='Yandex_button scalable return box-shadow pointer' onclick="redirect('основы');">
             <img src="./static/images/яндекс.jpeg" class="yaicon">
-            Основы программирования на языке Python
+            <div class="type_of_training">
+                Основы программирования на языке Python |
+            </div>
         </button>
     </section>
 
@@ -98,14 +101,18 @@
             Я был волонтером движений
         </div>
         <div class="movement box-shadow">
-            <img src="static/images/ФОРПОСТ.jpg" class="movement_icon">
+            <center>
+                <img src="static/images/ФОРПОСТ.jpg" class="movement_icon">
+            </center>
             <div class="movement_name">
                 ФОРПОСТ
             </div>
         </div>
 
         <div class="movement box-shadow">
-            <img src="static/images/Юнармия.png" class="movement_icon">
+            <center>
+                <img src="static/images/Юнармия.png" class="movement_icon">
+            </center>
             <div class="movement_name">
                 Юнармия
             </div>
